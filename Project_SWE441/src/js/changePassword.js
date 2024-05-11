@@ -16,9 +16,17 @@ function validate() {
     return false;
   }
 
-  // if password does not match the length limitations
-  if (password.value.length < 8 || password.value.length > 20) {
-    pass_error.textContent = "Must be 8-20 characters long";
+  if (
+    password.value.length >= 8 &&
+    password.value.length <= 20 &&
+    /[a-zA-Z]/.test(password.value) &&
+    /[0-9]/.test(password.value) &&
+    /[^a-zA-Z0-9]/.test(password.value)
+  ) {
+    document.getElementById("passwordHelpInline").innerHTML = "";
+  } else {
+    document.getElementById("passwordHelpInline").innerHTML =
+      "Password must contain at least 1 letter, 1 number, 1 symbol, and be between 8 and 20 characters long";
     return false;
   }
 
