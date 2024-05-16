@@ -1,0 +1,71 @@
+.cart-page {
+  margin: 80px auto;
+}
+
+.tabel-cart {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(33, 37, 41);
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #0a53be;
+  font-size: 13px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid rgb(33, 37, 41);
+  width: 100%;
+  max-width: 400px;
+}
+
+td :last-child {
+  text-align: right;
+}
+
+.bg-color {
+  background-color: #bb99ff;
+  background-image: radial-gradient(
+      at 47% 13%,
+      hsla(219, 68%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 57% 65%, hsla(246, 70%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 16% 41%, hsla(349, 72%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 56% 6%, hsla(355, 82%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 72% 48%, hsla(332, 90%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 85%, hsla(147, 76%, 74%, 1) 0px, transparent 50%);
+}
